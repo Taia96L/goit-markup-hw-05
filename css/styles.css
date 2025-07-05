@@ -642,8 +642,6 @@ body {
   gap: 12px;
   font-family: 'Roboto', sans-serif;
 }
-
-/* Контейнер поля вводу */
 .modal-label {
   position: relative;
   display: flex;
@@ -714,26 +712,34 @@ body {
 }
 
 .modal-button {
-  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   min-width: 169px;
   height: 56px;
-  padding: 16px 32px;
+  padding: 0;
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms ease;
-  margin-top: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
 .modal-button:focus {
   background-color: #404bbf;
+  border: none;
+}
+.modal-button:hover .form-icon,
+.modal-button:focus .form-icon {
+  fill: #ffffff;
 }
 .is-hidden {
   display: none;
