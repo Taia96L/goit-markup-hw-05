@@ -677,7 +677,10 @@ body {
   position: relative;
 }
 
-.form-icon {
+.input-wrapper:has(.modal-input:focus) .span-icon {
+  fill: #4d5ae5;
+}
+.span-icon {
   display: inline-flex;
   position: absolute;
   top: 50%;
@@ -686,10 +689,6 @@ body {
   pointer-events: none;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-wrapper:has(.modal-input:focus) .form-icon {
-  fill: #4d5ae5;
 }
 
 .modal-input,
