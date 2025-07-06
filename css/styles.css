@@ -674,9 +674,11 @@ body {
 
 .input-wrapper {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .form-icon {
+  display: inline-flex;
   position: absolute;
   top: 50%;
   left: 16px;
