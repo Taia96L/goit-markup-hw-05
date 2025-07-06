@@ -566,11 +566,12 @@ body {
 /* Footer styles end */
 
 /* Forms */
-
 :root {
   --accent-color: #404bbf;
   --icon-color: #f4f4fd;
   --label-color: #8e8f99;
+  --link-color: #4d5ae5;
+  --light-color: #f4f4fd;
 }
 
 .modal-overlay {
@@ -650,9 +651,7 @@ body {
   color: #2e2f42;
   margin-bottom: 16px;
 }
-.form-group {
-  margin-bottom: 8px;
-}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -660,12 +659,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.form-group {
+  margin-bottom: 8px;
+}
+
 .modal-label {
   display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--label-color);
   margin-bottom: 4px;
 }
 
@@ -721,10 +724,6 @@ body {
   border-color: #4d5ae5;
 }
 
-.form-group {
-  margin-bottom: 16px;
-}
-
 .modal-checkbox {
   margin-top: 4px;
 }
@@ -750,7 +749,7 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--label-color, #8e8f99);
+  color: var(--label-color);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -778,19 +777,20 @@ body {
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .custom-checkbox {
-  background-color: var(--accent-color, #404bbf);
+  background-color: var(--accent-color);
   border: none;
-  fill: var(--light-color, #f4f4fd);
+  fill: var(--light-color);
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .checkbox-icon {
-  fill: var(--light-color, #f4f4fd);
+  fill: var(--light-color);
 }
 
 .policy-link {
-  color: var(--link-color, #4d5ae5);
+  color: var(--link-color);
   text-decoration: underline;
 }
+
 .modal-button {
   display: block;
   margin: 0 auto;
@@ -815,21 +815,4 @@ body {
 .modal-button:focus {
   background-color: var(--accent-color);
   border: none;
-}
-
-.modal-button:hover .form-icon,
-.modal-button:focus .form-icon {
-  fill: #ffffff;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
