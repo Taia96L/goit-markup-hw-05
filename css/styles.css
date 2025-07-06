@@ -677,10 +677,10 @@ body {
   position: relative;
 }
 
-.input-wrapper:has(.modal-input:focus) .span-icon {
+.input-wrapper:has(.modal-input:focus) .form-icon {
   fill: #4d5ae5;
 }
-.span-icon {
+.form-icon {
   display: inline-flex;
   position: absolute;
   top: 50%;
