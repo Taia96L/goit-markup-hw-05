@@ -654,7 +654,6 @@ body {
 }
 
 .modal-form {
-  display: flex;
   flex-direction: column;
   gap: 12px;
   font-family: 'Roboto', sans-serif;
@@ -707,6 +706,9 @@ body {
 .modal-input {
   height: 40px;
 }
+.form-group-textarea {
+  margin-bottom: 16px;
+}
 
 .modal-textarea {
   height: 120px;
@@ -751,7 +753,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--label-color);
-  display: inline-flex;
   align-items: center;
   gap: 8px;
 }
